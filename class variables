@@ -1,0 +1,21 @@
+class Student:
+    # Class variable
+    school_name = 'jayam School '
+
+    def __init__(self, name, roll_no):
+        self.name = name
+        self.roll_no = roll_no
+
+# create Objects
+s1 = Student('Emma', 10)
+s2 = Student('Jessa', 20)
+
+print('Before')
+print(s1.name, s1.roll_no, s1.school_name)
+print(s2.name, s2.roll_no, s2.school_name)
+
+# Modify class variable using object reference
+s1.school_name = 'Pdrv school'
+print('After')
+print(s1.name, s1.roll_no, s1.school_name)
+print(s2.name, s2.roll_no, s2.school_name)
