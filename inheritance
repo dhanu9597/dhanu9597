@@ -1,0 +1,27 @@
+class Person:
+    def __init__(self,name,age):
+              self.name=name
+              self.age=age
+              
+# Parent class 2
+class Company:
+    def __init__(self,company_name,location,salary,skill):
+   
+        self.company_name=company_name
+        self.location=location
+        self.salary=salary
+        self.skill=skill
+        
+  
+
+# Child class
+class Employee(Person, Company):
+    def __init__(self, name,age,company_name,location,salary, skill):
+        Person.__init__(self,name,age)
+        Company.__init__(self,company_name,location,salary,skill)
+    
+
+# Create object of Employee
+emp = Employee('shalu',31,'amazon',"chennai",40000,"programming")
+
+print(emp.company_name)
