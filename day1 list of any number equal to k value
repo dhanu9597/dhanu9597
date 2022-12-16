@@ -1,0 +1,8 @@
+
+n=list(map(int,input().split()))
+k=17
+for i in n:
+   for j in n:
+      c=i+j
+      if c==k:
+         print(True)
