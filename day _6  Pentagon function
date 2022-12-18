@@ -1,0 +1,6 @@
+n=int(input())
+#formula for to calculate the nth center pentagonal number 
+c=(5*n*n-5*n+2)//2
+print("the centered pentagonal number is:",c)
+
+
