@@ -1,0 +1,9 @@
+# day_8 : Implement an autocomplete system. That is, given a query string [s] and a set of all possible query strings, return all strings in the set that have s as a prefix.
+#For example, given the query string | de | and the set of strings [[dog], [deer], [deal]], return[[ deer deal]].
+n=input()
+m=list(map(str,input().split()))
+o=[]
+for i in m:
+	if n[0]==i[0] and n[1]==i[1]:
+		o.append(i)
+print(o)
