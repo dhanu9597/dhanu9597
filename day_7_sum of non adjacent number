@@ -1,0 +1,9 @@
+#day 7 sum of largest non adjancent number.
+n=list(map(int,input().split()))
+a=0
+b=0
+for i in n:
+	l=max(a,b)
+	a=b+i
+	b=l
+print(max(a,b))
