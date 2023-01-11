@@ -1,0 +1,6 @@
+a=list(map(int, input().split(" ")))
+res = []
+for i in range(len(a)-2):
+    x = max(a[i], a[i+1], a[i+2])
+    res.append(x)
+print(res)
